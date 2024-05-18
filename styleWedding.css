@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&family=WindSong:wght@400;500&display=swap');
+
+:root {
+    --pink: #f45c9e;
+    --bg: #131315;
+    --shadow: 0 2px 2px rgba(0, 0, 0, .4);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(Picture\ For\ Wedding/picture1.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(1.5px) grayscale(.3);
+}
+
+.hero {
+    min-height: 100vh;
+    text-shadow: var(--shadow);
+    color: white;
+}
+
+.hero h1 {
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.hero h4 {
+    font-size: 1.4rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(250, 250, 250, .9);
+}
+
+.hero a:hover,
+.info a:hover {
+    color: rgba(250, 250, 2502, .8);
+    background-color: var(--pink);
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0px 1px 3px 2px rgba(129, 27, 87, 0.3);
+    border: 1.5px solid var(--pink);
+}
+
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(241, 241, 241);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.simply-countdown>.simply-section {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 50px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: 15px;
+    background: #f14e95;
+    box-shadow: 0 1px 3px #1715172c, 0 1px 2px rgba(48, 47, 48, 0.4)
+}
+
+.simply-countdown>.simply-section .simply-amount,
+.simply-countdown>.simply-section .simply-word {
+    display: block;
+    text-align: center
+}
+
+.simply-countdown>.simply-section .simply-amount {
+    font-size: 1.3rem;
+}
+
+.navbar-brand,
+.offcanvas-title {
+    font-family: "WindSong", cursive;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.my-navbar {
+    background-color: rgba(250, 250, 250, .3);
+    backdrop-filter: blur(4px);
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, .4);
+}
+
+.my-navbar .nav-link {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.my-navbar .offcanvas {
+    height: 100vh;
+}
+
+.hero h1,
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+    font-family: "WindSong", cursive;
+    color: var(--pink);
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.home,
+.info,
+.story,
+.gallery,
+.rsvp,
+.gifts {
+    padding: 8rem 0 5rem;
+}
+
+.hero a,
+.info a {
+    color: white;
+    border: 1.5px solid white;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.story span,
+.gallery span,
+.gifts span {
+    text-transform: uppercase;
+    color: #555;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.home {
+    background-image: url(Picture\ For\ Wedding/bg1.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: -5.5rem;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, .25);
+}
+
+.home h3 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'Windsong', cursive;
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+.home .heart {
+    transform: translateY(56px);
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--pink);
+}
+
+.info,
+.rsvp {
+    background-color: var(--bg);
+    color: white;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card,
+.info .card-body,
+.info .card-header,
+.info .card-footer {
+    text-shadow: var(--shadow);
+    background-color: rgba(250, 250, 250, .1) !important;
+    border: 1px solid rgba(250, 250, 250, .85);
+}
+
+.info .card-header {
+    letter-spacing: .3rem;
+    font-weight: 500;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.gallery {
+    background-color: #eee;
+}
+
+.rsvp h2 {
+    font-size: 4.5rem;
+}
+
+.rsvp button {
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+    background-color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    border: 1px solid white;
+    color: var(--pink);
+}
+
+footer {
+    background-color: var(--pink);
+    color: white;
+    padding: 4rem 3rem;
+}
+
+footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 10px 5px;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: rgba(250, 250, 250, .5);
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.timeline {
+    position: relative;
+    list-style: none;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+}
+
+
+.timeline::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1.5px;
+    background-color: #aaa;
+    left: 50%;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+    content: '';
+    display: table;
+}
+
+.timeline li::after {
+    clear: both;
+}
+
+.timeline li .timeline-img {
+    width: 150px;
+    height: 150px;
+    background-color: #aaa;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+}
+
+.timeline li .timeline-panel {
+    width: 38%;
+    float: left;
+    border: 1px #aaa;
+    padding: 1.2rem .5rem;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: .7rem;
+    margin-right: 10px;
+}
+
+.timeline li .timeline-panel::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #aaa;
+    border-right: 0 solid #aaa;
+    border-bottom: 14px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid white;
+    border-right: 0 solid white;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+    .home .heart {
+        display: none;
+    }
+
+    .info h2,
+    .home h2,
+    .story h2 {
+        font-family: 'Windsong', cursive;
+        font-size: 3.5rem;
+        color: var(--pink);
+    }
+
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-img {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel {
+        float: right;
+        width: calc(100% - 200px);
+    }
+
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+
+    .simply-countdown>.simply-section {
+        padding: 40px;
+        margin: 5px;
+    }
+
+    .my-navbar .nav-link {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 55%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 3px;
+    }
+
+    .timeline li .timeline-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc(100% - 150px);
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 40px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 40px;
+    }
+}
+
+/* Mini Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 25px;
+        margin: 3px;
+    }
+}

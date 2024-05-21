@@ -523,7 +523,7 @@
             rootElement.style.scrollBehavior = 'auto';
         }
 
-        enable.addEventListener('click', function () {
+        enable.onclick = function () {
             window.onscroll = function () {
             }
 
@@ -531,7 +531,7 @@
 
             // localStorage.setItem('opened', 'true')
             playAudio()
-        })
+        }
 
         function playAudio() {
             song.volume = 0.1;

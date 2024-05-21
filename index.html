@@ -26,7 +26,7 @@
             <h1 class="mt-3">Bagas & Shibuya</h1>
             <p>Akan melangsungkan resepsi pernikahan dalam:</p>
             <div class="simply-countdown"></div>
-            <a href="#home" class="btn btn-lg btn-outline-light mt-4" onclick="enableScroll()">Lihat Undangan</a>
+            <a href="#home" class="btn btn-lg btn-outline-light mt-4 enable">Lihat Undangan</a>
         </main>
     </section>
     <!-- Bagian Akhir Hero -->
@@ -265,44 +265,31 @@
                         molestiae quas?</p>
                 </div>
             </div>
-            <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center text-center">
+            <div class="row row-cols-lg-4 row-cols-md-3 row-cols-ms-2 row-cols-1 justify-content-center text-center">
                 <div class="col mt-5">
-                    <a href="Picture For Wedding/img8.jpeg" data-toggle="lightbox"
+                    <a href="Picture For Wedding/pic1.jpeg" data-toggle="lightbox" data-caption="Me with my girlfriend"
+                        data-gallery="my-gallery">
+                        <img src="thumbnail/pic1.jpeg" class="width-100 rounded img-fluid" alt="Me with my girlfriend">
+                    </a>
+                </div>
+                <div class="col mt-5">
+                    <a href="Picture For Wedding/pic3.jpg" data-toggle="lightbox"
                         data-caption="Me with my girlfriend in anime version" data-gallery="my-gallery">
-                        <img src="thumbnail/img8.jpg" class="width-100 rounded img-fluid"
+                        <img src="thumbnail/pic3.jpg" class="width-100 rounded img-fluid"
                             alt="Me with my girlfriend in anime version">
                     </a>
                 </div>
                 <div class="col mt-5">
-                    <a href="Picture For Wedding/img4.jpg" data-toggle="lightbox" data-caption="Me with my girlfriend"
+                    <a href="Picture For Wedding/pic2.jpg" data-toggle="lightbox" data-caption="Me with my girlfriend 2"
                         data-gallery="my-gallery">
-                        <img src="thumbnail/img4.jpg" class="width-100 rounded img-fluid" alt="Me with my girlfriend">
+                        <img src="thumbnail/pic2.jpg" class="width-100 rounded img-fluid" alt="Me with my girlfriend 2">
                     </a>
                 </div>
                 <div class="col mt-5">
-                    <a href="Picture For Wedding/img5.jpg" data-toggle="lightbox" data-caption="Me with my girlfriend 2"
-                        data-gallery="my-gallery">
-                        <img src="thumbnail/img5.jpg" class="width-100 rounded img-fluid" alt="Me with my girlfriend 2">
-                    </a>
-                </div>
-                <div class="col mt-5">
-                    <a href="Picture For Wedding/img7.jpeg" data-toggle="lightbox"
+                    <a href="Picture For Wedding/pic4.2.jpeg" data-toggle="lightbox"
                         data-caption="My girlfriend in anime version 2" data-gallery="my-gallery">
-                        <img src="thumbnail/img7.jpg" class="width-100 rounded img-fluid"
+                        <img src="thumbnail/pic4.2.jpeg" class="width-100 rounded img-fluid"
                             alt="Me with my girlfriend in anime version 2">
-                    </a>
-                </div>
-                <div class="col mt-5">
-                    <a href="Picture For Wedding/img2.jpeg" data-toggle="lightbox"
-                        data-caption="My girlfriend in anime version" data-gallery="my-gallery">
-                        <img src="thumbnail/img2.jpg" class="width-100 rounded img-fluid"
-                            alt="My girlfriend in anime version">
-                    </a>
-                </div>
-                <div class="col mt-5">
-                    <a href="Picture For Wedding/img1.jpeg" data-toggle="lightbox" data-caption="Me in anime version"
-                        data-gallery="my-gallery">
-                        <img src="thumbnail/img1.jpg" class="width-100 rounded img-fluid" alt="Me in anime version">
                     </a>
                 </div>
             </div>
@@ -403,7 +390,7 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="fw-bold">Terima Kasih Atas Giftsnya 🥰</div>
-                                <img src="thumbnail/img4.jpg" alt="">
+                                <img src="thumbnail/pic3.jpg" alt="">
                             </li>
                         </ul>
                     </div>
@@ -456,7 +443,6 @@
 
         <div class="audio-icon-wrapper" style="display: none;">
             <i class="bi bi-disc"></i>
-
         </div>
     </div>
 
@@ -523,6 +509,7 @@
         const audioIcon = document.querySelector('.audio-icon-wrapper i');
         let isPlaying = 'false';
         const song = document.querySelector('#song');
+        const enable = document.querySelector('.enable')
 
 
         function disableScroll() {
@@ -536,7 +523,7 @@
             rootElement.style.scrollBehavior = 'auto';
         }
 
-        function enableScroll() {
+        enable.addEventListener('click', function () {
             window.onscroll = function () {
             }
 
@@ -544,8 +531,7 @@
 
             // localStorage.setItem('opened', 'true')
             playAudio()
-        }
-
+        })
 
         function playAudio() {
             song.volume = 0.1;
